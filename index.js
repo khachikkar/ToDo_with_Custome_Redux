@@ -1,4 +1,4 @@
-import {createStore} from "./store/store";
+import {createStore} from "./store/store.js";
 import {initialState} from "./state/state.js";
 import {myToDoReducer} from "./reducer/reducer.js";
 import {ADD, REMOVE} from "./constants/constants.js";
@@ -14,10 +14,13 @@ function render(){
 
     todos.forEach((todo)=> {
         const li = document.createElement("li");
-        li.textContent = todo.text
+        const  p = document.createElement("p");
+        p.textContent = todo.text
         const button = document.createElement("button");
+        button.className = "rbn"
         button.textContent = REMOVE
         button.onclick = ()=>mystore.dispatch({type: REMOVE, payload: todo.id})
+        li.appendChild(p)
         li.appendChild(button)
         todolist.appendChild(li)
     })

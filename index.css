@@ -9,15 +9,15 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f0f2f5;
+    background-color: lightblue;
     font-family: Arial, sans-serif;
 }
 
 div {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 20px 30px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
 }
@@ -40,7 +40,7 @@ input {
 }
 
 input:focus {
-    border-color: #4a90e2;
+    border-color: #6d4e;
 }
 
 .addb {
@@ -48,15 +48,29 @@ input:focus {
     padding: 10px;
     font-size: 16px;
     color: #fff;
-    background-color: #4a90e2;
+    background-color: #2e3a;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
+.rbn{
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #2e3a1d;
+
+}
+
 .addb:hover {
-    background-color: #357ab8;
+    background-color: #2e3a1a;
 }
 
 ul {
@@ -67,6 +81,7 @@ ul {
 
 li {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -77,6 +92,14 @@ li {
     color: #333;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s;
+}
+
+p{
+    width: 100%; /* Ensures the paragraph takes up full width */
+    word-wrap: break-word; /* Optional: breaks long words to fit within width */
+    box-sizing: border-box;
+    text-align: start;
+    margin-bottom: 10px;
 }
 
 li:hover {
