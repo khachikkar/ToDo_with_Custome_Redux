@@ -7,6 +7,8 @@ const myInitialState =  initialState
 const mystore = createStore(myToDoReducer, myInitialState)
 
 
+// renderum  buttonneri onclick i vra dnum enq mer mystore.dispatch() funckian talov hamapatasxan action y ev payloady
+
 function render(){
     const todolist = document.getElementById("todo-list")
     todolist.innerHTML = ""
@@ -27,6 +29,8 @@ function render(){
 
 }
 
+// kapum enq redux y u viewn
+
 mystore.subscribe(render)
 
 function addTodo (){
@@ -46,4 +50,6 @@ function addTodo (){
 
 document.getElementById("add-button").addEventListener("click", addTodo);
 
+
+// rener enq anum componnety
 render()

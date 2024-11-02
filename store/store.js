@@ -1,5 +1,15 @@
 
-//stexcum enq c
+//stexcum enq createStore funckian  talov argument reducer ev initial state
+// vori mej stexcum enq state veragrum initial state y
+// stexcum enq cb zangvac
+// stexcum enq getState methody  vory return e anum state y
+//s texcum enq dispatch methody vory stanum e action
+// statin veragrum e kanchum e reducer y statov u action ov
+// stexcum enq subscribe methody vory kapum e reduxcy UI in
+//return enq anum stexcvac methodnery
+
+
+
 
 
 export const createStore = (reducer, initialState)=>{
